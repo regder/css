@@ -1,0 +1,7 @@
+
+/*Псевдокласс nth-child позволяет стилизовать каждый второй, третий элемент, только четные или только нечетные элементы и т.д.*/
+tr:nth-child(odd) { background-color: #bbb; }
+tr:nth-child(even) { background-color: #fff; }
+tr:nth-child(3) { background-color: blue; }
+
+/*tr:nth-child(2n+1) { background-color: #bbb; } Здесь стиль применяется к каждой второй нечетной строке.*/
