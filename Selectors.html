@@ -6,41 +6,7 @@
 		<title>Selectors</title>
 		<link rel="stylesheet" type="text/css" href="selector.css"/>
 		<style>
-			h2+div { color: red; }
-			/*стилизовать вообще все смежные элементы одного уровня знак тильды "~" / h2~div { color: red; }*/
-			a:link    {color:blue; text-decoration:none}
-            a:visited {color:pink; text-decoration:none}
-            a:hover   {color:red; text-decoration:underline}
-            a:active  {color:yellow; text-decoration:underline}
-            input:hover {border:2px solid red;}
-            /*Селектор :not() позволяет выбрать все элементы кроме определенных, то есть исключить некоторые элементы из выбора*/
-            a:not(.blueLink) { color: red; }
-            /*Селектор :lang выбирает элементы на основании атрибута lang:*/
-            :lang(ru) {
-                color: blue;
-            }
-            :lang(en) {
-                color: green;
-            }
-            a:last-child{
-             
-                color: blue;
-            }
-            p:only-child{
-            	color:red;
-        	}
-        	span:only-of-type{
-         
-            	color: green;   /* зеленый цвет */
-	        }
-	        p:only-of-type{
-	         
-	            color: red; /* красный цвет */
-	        }
-	        div:only-of-type{
-	         
-	            color: blue;    /* синий цвет */
-	        }
+			
 		</style>
 	</head>
 	<body>
@@ -67,6 +33,7 @@
         </div>
 
         <!--Псевдокласс only-of-type-->
+        <!--div определен стиль, он не будет применяться, так как в контейнере body находится два элемента div, а не один-->
         <div>
             Header
         </div>
